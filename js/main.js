@@ -52,12 +52,13 @@ $('.trigger').click(function(){
     $(this).toggleClass('open');
 
     if($(this).hasClass('open')){
-        
         $('.gnb').animate({right:0}, 400);
         $('.trigger').animate({left:-250}, 400);
+        $('header h1').addClass('none');
     } else {
         $('.gnb').animate({right:-250}, 400);
         $('.trigger').animate({left:0}, 400);
+        $('header h1').removeClass('none');
     }
     } 
 });
